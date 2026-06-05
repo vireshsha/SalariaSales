@@ -7,7 +7,7 @@ enum TestFixtures {
         title: "Mobile Developer",
         companyName: "Acme Corp",
         location: "Remote",
-        salaryRange: "₹75L - ₹91L",
+        salaryRange: "$75k - $91k",
         description: "Build iOS apps.",
         companyLogoURL: nil,
         jobType: "Full Time",
@@ -29,7 +29,7 @@ enum TestFixtures {
           "job_type": "full_time",
           "publication_date": "2026-01-01T00:00:00",
           "candidate_required_location": "Remote",
-          "salary": "₹75L - ₹91L",
+          "salary": "$75k - $91k",
           "description": "Build iOS apps."
         }
       ]

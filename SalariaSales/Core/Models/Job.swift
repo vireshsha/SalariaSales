@@ -14,7 +14,7 @@ struct Job: Identifiable, Equatable, Hashable, Sendable {
 
     var displaySalary: String {
         guard !salaryRange.isEmpty else { return "Salary not disclosed" }
-        return SalaryFormatter.inrDisplay(from: salaryRange)
+        return SalaryFormatter.usdDisplay(from: salaryRange)
     }
 
     var displayLocation: String {
@@ -29,7 +29,7 @@ extension Job {
             title: "iOS Engineer",
             companyName: "Salaria",
             location: "Remote — Worldwide",
-            salaryRange: "₹99L - ₹1.3Cr",
+            salaryRange: "$109k - $228k",
             description: "Build scalable mobile experiences with SwiftUI and UIKit.",
             companyLogoURL: nil,
             jobType: "full_time",
@@ -41,7 +41,7 @@ extension Job {
             title: "Head of Sales",
             companyName: "The Land Geek",
             location: "Worldwide",
-            salaryRange: "₹90L - ₹1.9Cr",
+            salaryRange: "$90k - $190k",
             description: "Lead and scale a high-performing sales organization.",
             companyLogoURL: nil,
             jobType: "contract",

@@ -22,7 +22,7 @@ struct JobRowView: View {
                     .foregroundStyle(.secondary)
                     .lineLimit(1)
 
-                Label(job.displaySalary, systemImage: "indianrupeesign.circle")
+                Label(job.displaySalary, systemImage: "dollarsign.circle")
                     .font(.caption.weight(.semibold))
                     .foregroundStyle(.green)
             }

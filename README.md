@@ -136,7 +136,7 @@ scripts/                    # Xcode project generator
 
 1. **iOS 17+** — enables modern SwiftUI (`ContentUnavailableView`, `.searchable`, NavigationStack).
 2. **Remotive as data source** — remote jobs API is stable and permitted for demo use; attribution link on detail screen points to Remotive.
-3. **Salary display** — salaries are shown in **INR (₹)**; USD values from the API are converted at a fixed rate (~₹83 per $1). Many listings omit salary; UI shows *“Salary not disclosed”* when empty.
+3. **Salary display** — salaries are shown in **USD ($)** and use the raw API salary strings. Many listings omit salary; UI shows *“Salary not disclosed”* when empty.
 4. **HTML descriptions** — job descriptions are converted to plain text for readability (not rendered as rich HTML).
 5. **Search scope** — title and company only (per requirements); location is visible but not searchable.
 6. **No authentication** — public API only; no user accounts or persistence.

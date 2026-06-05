@@ -2,22 +2,23 @@ import XCTest
 @testable import SalariaSales
 
 final class SalaryFormatterTests: XCTestCase {
-    func testConvertsUSDRangeToINR() {
-        let result = SalaryFormatter.inrDisplay(from: "$109k - $228k")
-        XCTAssertTrue(result.contains("₹"))
-        XCTAssertFalse(result.contains("$"))
+    func testReturnsUSDRangeUnchanged() {
+        let result = SalaryFormatter.usdDisplay(from: "$109k - $228k")
+        XCTAssertEqual(result, "$109k - $228k")
+        XCTAssertTrue(result.contains("$"))
+        XCTAssertFalse(result.contains("₹"))
     }
 
-    func testLeavesINRUnchanged() {
-        let input = "₹90L - ₹1.9Cr"
-        XCTAssertEqual(SalaryFormatter.inrDisplay(from: input), input)
+    func testLeavesUSDUnchanged() {
+        let input = "$90k - $110k"
+        XCTAssertEqual(SalaryFormatter.usdDisplay(from: input), input)
     }
 
     func testEmptyStringReturnsEmpty() {
-        XCTAssertEqual(SalaryFormatter.inrDisplay(from: ""), "")
+        XCTAssertEqual(SalaryFormatter.usdDisplay(from: ""), "")
     }
 
-    func testJobDisplaySalaryConvertsAPIValues() {
+    func testJobDisplaySalaryUsesUSD() {
         let job = Job(
             id: 1,
             title: "Engineer",
@@ -30,7 +31,7 @@ final class SalaryFormatterTests: XCTestCase {
             category: "Software",
             applyURL: nil
         )
-        XCTAssertTrue(job.displaySalary.contains("₹"))
-        XCTAssertFalse(job.displaySalary.contains("$"))
+        XCTAssertTrue(job.displaySalary.contains("$"))
+        XCTAssertFalse(job.displaySalary.contains("₹"))
     }
 }

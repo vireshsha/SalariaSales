@@ -9,7 +9,7 @@ final class JobSearchFilterTests: XCTestCase {
             title: "Backend Engineer",
             companyName: "Beta LLC",
             location: "USA",
-            salaryRange: "₹83L",
+            salaryRange: "$83k",
             description: "",
             companyLogoURL: nil,
             jobType: "Full Time",

@@ -31,8 +31,8 @@ struct JobDetailView: View {
     }
 
     private var salarySection: some View {
-        DetailSection(title: "Salary (INR)") {
-            Label(viewModel.job.displaySalary, systemImage: "indianrupeesign.circle")
+        DetailSection(title: "Salary (USD)") {
+            Label(viewModel.job.displaySalary, systemImage: "dollarsign.circle")
         }
     }
 
