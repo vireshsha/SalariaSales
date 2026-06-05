@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Serve jobs_fallback.json at http://127.0.0.1:8080/jobs_fallback.json
+"""Serve jobs_fallback.json for local testing.
+
+The remote fallback URL is:
+  https://raw.githubusercontent.com/vireshsha/SalariaSales/main/SalariaSales/Resources/jobs_fallback.json
 
 Usage:
   python3 scripts/serve_jobs_fallback.py
-
-Then run the app with:
-  USE_LOCAL_JOBS_FALLBACK=1
 """
 
 from http.server import HTTPServer, SimpleHTTPRequestHandler
@@ -21,5 +21,5 @@ class Handler(SimpleHTTPRequestHandler):
 
 
 if __name__ == "__main__":
-    print(f"Serving {ROOT} at http://127.0.0.1:{PORT}/jobs_fallback.json")
+    print(f"Serving {ROOT} for local testing on port {PORT}")
     HTTPServer(("127.0.0.1", PORT), Handler).serve_forever()
