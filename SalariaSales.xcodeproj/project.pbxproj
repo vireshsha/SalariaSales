@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0429852FA9451D8674386584 /* HTMLTextSanitizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091B4845F060DFCA9B5124C6 /* HTMLTextSanitizerTests.swift */; };
+		0B5F1DBEAD1E3C4F40EB2322 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6FFB2999BD2A04BA752F81 /* Job.swift */; };
+		26D6C411F0DB2FD9687D8092 /* JobSearchFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92119F56E3A7451ABF7DF81A /* JobSearchFilter.swift */; };
+		31353B2BB9D68DA504967DD3 /* JobListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D141BCAE4182102B09628AB1 /* JobListViewModelTests.swift */; };
+		341376507E390B5676310085 /* SalaryFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4744A8E48800108D5F8FA2E /* SalaryFormatter.swift */; };
+		4042B834A39A18D2BA364F33 /* JobRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB6892CF89A4513C93CA7E0 /* JobRepositoryTests.swift */; };
+		4333D567CF077DD9F013943A /* JobRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C877366A547703368E1142 /* JobRepository.swift */; };
+		4D15D2FC5F8BC8879B282974 /* JobSearchFilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C262F34A0A3A039CCD8AEA /* JobSearchFilterTests.swift */; };
+		51E703B355BDF0CEAC525091 /* TestFixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF13817B4ADB5B5BB8AA4B3 /* TestFixtures.swift */; };
+		61A1A2FF4A1C29F3B4EB474D /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42743AA999E90DE8B6B36414 /* AppContainer.swift */; };
+		63D5D80282CD7D16A11E194B /* JobDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766D944B5757A964F16FA807 /* JobDetailViewModel.swift */; };
+		6671C219C6668B8499CF9CAD /* JobDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D051044C282E253BE62446 /* JobDetailView.swift */; };
+		6C4BB8A5FC8E018446C5429B /* SalariaSalesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38BC72C40B04FAB1C2028DF /* SalariaSalesApp.swift */; };
+		76F04CA2BDEF38D9BE420D2A /* JobListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7B80E4624E6DBDF54F6789 /* JobListViewModel.swift */; };
+		7DD8E3AEBE9A707670152E85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50C989CAF04027F52B68186 /* Assets.xcassets */; };
+		8587FA17AB57A9EE00C45C72 /* StateViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251F480DAA55D3580B8A9D3A /* StateViews.swift */; };
+		86EBCA117A563CEC2B441980 /* RemotiveDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EAA67BBAA77F48C1347ED0 /* RemotiveDTO.swift */; };
+		8D9378DB85F3FE35B40DEFF3 /* jobs_fallback.json in Resources */ = {isa = PBXBuildFile; fileRef = FD4D16CAE7E34A3E1B50B818 /* jobs_fallback.json */; };
+		9BA824FD8A81064A1B7C92B3 /* JobRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B819ED6D342BD8805F160B4 /* JobRowView.swift */; };
+		A1F4F5F573C12D257B20E0BD /* SalaryFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A08DB0B1BE6BB57F693FC9 /* SalaryFormatterTests.swift */; };
+		A5BFD29C933BFF4A3CC477B7 /* JobDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B24D652028A0A7D71DC6CD /* JobDetailViewModelTests.swift */; };
+		BA6837EF46DF4E2070E6323D /* JobListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FABAEB1B0D50B48CF08EC87 /* JobListView.swift */; };
+		CF3155CE27FCD82B37F833F8 /* HTMLTextSanitizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46766DBAC67CE443E25386A /* HTMLTextSanitizer.swift */; };
+		FB2BCBA4428EEFB70B245BBC /* JobEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572C543FAF9BF7FF5152B1BE /* JobEndpoints.swift */; };
+		FBFB733B7DCC445AE1B2493B /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B777658C00856EB739B3EBF /* NetworkClient.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		844DD8D8FF9A79C8328FFB40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E69A5DF3AEF475041E1EBBBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62E3BC2F5CA59CEE47D1034B;
+			remoteInfo = SalariaSales;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		091B4845F060DFCA9B5124C6 /* HTMLTextSanitizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLTextSanitizerTests.swift; sourceTree = "<group>"; };
+		0FB6892CF89A4513C93CA7E0 /* JobRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobRepositoryTests.swift; sourceTree = "<group>"; };
+		251F480DAA55D3580B8A9D3A /* StateViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateViews.swift; sourceTree = "<group>"; };
+		2B777658C00856EB739B3EBF /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		38B24D652028A0A7D71DC6CD /* JobDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailViewModelTests.swift; sourceTree = "<group>"; };
+		42743AA999E90DE8B6B36414 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		4446DC519A994624E83B97A8 /* SalariaSalesTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SalariaSalesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		572C543FAF9BF7FF5152B1BE /* JobEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobEndpoints.swift; sourceTree = "<group>"; };
+		58C877366A547703368E1142 /* JobRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobRepository.swift; sourceTree = "<group>"; };
+		5B819ED6D342BD8805F160B4 /* JobRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobRowView.swift; sourceTree = "<group>"; };
+		5FABAEB1B0D50B48CF08EC87 /* JobListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListView.swift; sourceTree = "<group>"; };
+		61D051044C282E253BE62446 /* JobDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailView.swift; sourceTree = "<group>"; };
+		72C262F34A0A3A039CCD8AEA /* JobSearchFilterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSearchFilterTests.swift; sourceTree = "<group>"; };
+		766D944B5757A964F16FA807 /* JobDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailViewModel.swift; sourceTree = "<group>"; };
+		92119F56E3A7451ABF7DF81A /* JobSearchFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSearchFilter.swift; sourceTree = "<group>"; };
+		A1EAA67BBAA77F48C1347ED0 /* RemotiveDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotiveDTO.swift; sourceTree = "<group>"; };
+		A50C989CAF04027F52B68186 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A686A3864A221A4100C8EDF3 /* SalariaSales.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SalariaSales.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF6FFB2999BD2A04BA752F81 /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		C38BC72C40B04FAB1C2028DF /* SalariaSalesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalariaSalesApp.swift; sourceTree = "<group>"; };
+		CC7B80E4624E6DBDF54F6789 /* JobListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListViewModel.swift; sourceTree = "<group>"; };
+		D141BCAE4182102B09628AB1 /* JobListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListViewModelTests.swift; sourceTree = "<group>"; };
+		D4744A8E48800108D5F8FA2E /* SalaryFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalaryFormatter.swift; sourceTree = "<group>"; };
+		E1A08DB0B1BE6BB57F693FC9 /* SalaryFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalaryFormatterTests.swift; sourceTree = "<group>"; };
+		F46766DBAC67CE443E25386A /* HTMLTextSanitizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLTextSanitizer.swift; sourceTree = "<group>"; };
+		FAF13817B4ADB5B5BB8AA4B3 /* TestFixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFixtures.swift; sourceTree = "<group>"; };
+		FD4D16CAE7E34A3E1B50B818 /* jobs_fallback.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = jobs_fallback.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		01D8373B541D0A38DF2F26F2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				251F480DAA55D3580B8A9D3A /* StateViews.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1854A33CEDE14C83C21C1A99 /* JobDetail */ = {
+			isa = PBXGroup;
+			children = (
+				61D051044C282E253BE62446 /* JobDetailView.swift */,
+				766D944B5757A964F16FA807 /* JobDetailViewModel.swift */,
+			);
+			path = JobDetail;
+			sourceTree = "<group>";
+		};
+		24A380DB541D06E4B934602D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A50C989CAF04027F52B68186 /* Assets.xcassets */,
+				FD4D16CAE7E34A3E1B50B818 /* jobs_fallback.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2BA21D42E1DDAE622EBA1A9D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FAF13817B4ADB5B5BB8AA4B3 /* TestFixtures.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2E94FE4F4F8BBC2BA6E99D33 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				42743AA999E90DE8B6B36414 /* AppContainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		5184A592AA73F49143B24EF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A686A3864A221A4100C8EDF3 /* SalariaSales.app */,
+				4446DC519A994624E83B97A8 /* SalariaSalesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BDFE1AB5727097FF05996D0 /* SalariaSales */ = {
+			isa = PBXGroup;
+			children = (
+				D1AFA2C38F1E0ED54BC9FC71 /* App */,
+				F87269975F30D7EFD6C6B4BF /* Core */,
+				7D868C46D64419935E3B3A17 /* Features */,
+				24A380DB541D06E4B934602D /* Resources */,
+			);
+			path = SalariaSales;
+			sourceTree = "<group>";
+		};
+		70BB8DC6398FBBB784A132BE /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				58C877366A547703368E1142 /* JobRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		7D868C46D64419935E3B3A17 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				01D8373B541D0A38DF2F26F2 /* Common */,
+				1854A33CEDE14C83C21C1A99 /* JobDetail */,
+				98DE74BB81DF07181A4EAA10 /* JobList */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		8291B02E64CB99A29C34D3E5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				572C543FAF9BF7FF5152B1BE /* JobEndpoints.swift */,
+				2B777658C00856EB739B3EBF /* NetworkClient.swift */,
+				A1EAA67BBAA77F48C1347ED0 /* RemotiveDTO.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		96978A927F63751C0CC51623 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F46766DBAC67CE443E25386A /* HTMLTextSanitizer.swift */,
+				92119F56E3A7451ABF7DF81A /* JobSearchFilter.swift */,
+				D4744A8E48800108D5F8FA2E /* SalaryFormatter.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		98DE74BB81DF07181A4EAA10 /* JobList */ = {
+			isa = PBXGroup;
+			children = (
+				5FABAEB1B0D50B48CF08EC87 /* JobListView.swift */,
+				CC7B80E4624E6DBDF54F6789 /* JobListViewModel.swift */,
+				5B819ED6D342BD8805F160B4 /* JobRowView.swift */,
+			);
+			path = JobList;
+			sourceTree = "<group>";
+		};
+		C20F4175DDED098B7FB580A1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AF6FFB2999BD2A04BA752F81 /* Job.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D1AFA2C38F1E0ED54BC9FC71 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C38BC72C40B04FAB1C2028DF /* SalariaSalesApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E2413F9F4AD35AF4EE20432C /* SalariaSalesTests */ = {
+			isa = PBXGroup;
+			children = (
+				091B4845F060DFCA9B5124C6 /* HTMLTextSanitizerTests.swift */,
+				38B24D652028A0A7D71DC6CD /* JobDetailViewModelTests.swift */,
+				D141BCAE4182102B09628AB1 /* JobListViewModelTests.swift */,
+				0FB6892CF89A4513C93CA7E0 /* JobRepositoryTests.swift */,
+				72C262F34A0A3A039CCD8AEA /* JobSearchFilterTests.swift */,
+				E1A08DB0B1BE6BB57F693FC9 /* SalaryFormatterTests.swift */,
+				2BA21D42E1DDAE622EBA1A9D /* Helpers */,
+			);
+			path = SalariaSalesTests;
+			sourceTree = "<group>";
+		};
+		F87269975F30D7EFD6C6B4BF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2E94FE4F4F8BBC2BA6E99D33 /* DI */,
+				C20F4175DDED098B7FB580A1 /* Models */,
+				8291B02E64CB99A29C34D3E5 /* Networking */,
+				70BB8DC6398FBBB784A132BE /* Repositories */,
+				96978A927F63751C0CC51623 /* Utilities */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FFF6703F7E47ABCAF2CCFAB1 = {
+			isa = PBXGroup;
+			children = (
+				5BDFE1AB5727097FF05996D0 /* SalariaSales */,
+				E2413F9F4AD35AF4EE20432C /* SalariaSalesTests */,
+				5184A592AA73F49143B24EF3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		62E3BC2F5CA59CEE47D1034B /* SalariaSales */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 673C751CEFAC96B3736C0F32 /* Build configuration list for PBXNativeTarget "SalariaSales" */;
+			buildPhases = (
+				AF77047725274C048B32CB17 /* Sources */,
+				B0A5D4798E8194009E5FBC2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SalariaSales;
+			packageProductDependencies = (
+			);
+			productName = SalariaSales;
+			productReference = A686A3864A221A4100C8EDF3 /* SalariaSales.app */;
+			productType = "com.apple.product-type.application";
+		};
+		868750B481F6DC265B2D0AEA /* SalariaSalesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DC632BBE4ABEF775A492C31 /* Build configuration list for PBXNativeTarget "SalariaSalesTests" */;
+			buildPhases = (
+				CA687D745D37508375D8EBE4 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64297D0B086D2DDD62A46484 /* PBXTargetDependency */,
+			);
+			name = SalariaSalesTests;
+			packageProductDependencies = (
+			);
+			productName = SalariaSalesTests;
+			productReference = 4446DC519A994624E83B97A8 /* SalariaSalesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E69A5DF3AEF475041E1EBBBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 588D252AFE86920834ABFE2D /* Build configuration list for PBXProject "SalariaSales" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = FFF6703F7E47ABCAF2CCFAB1;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 5184A592AA73F49143B24EF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62E3BC2F5CA59CEE47D1034B /* SalariaSales */,
+				868750B481F6DC265B2D0AEA /* SalariaSalesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B0A5D4798E8194009E5FBC2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DD8E3AEBE9A707670152E85 /* Assets.xcassets in Resources */,
+				8D9378DB85F3FE35B40DEFF3 /* jobs_fallback.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF77047725274C048B32CB17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61A1A2FF4A1C29F3B4EB474D /* AppContainer.swift in Sources */,
+				CF3155CE27FCD82B37F833F8 /* HTMLTextSanitizer.swift in Sources */,
+				0B5F1DBEAD1E3C4F40EB2322 /* Job.swift in Sources */,
+				6671C219C6668B8499CF9CAD /* JobDetailView.swift in Sources */,
+				63D5D80282CD7D16A11E194B /* JobDetailViewModel.swift in Sources */,
+				FB2BCBA4428EEFB70B245BBC /* JobEndpoints.swift in Sources */,
+				BA6837EF46DF4E2070E6323D /* JobListView.swift in Sources */,
+				76F04CA2BDEF38D9BE420D2A /* JobListViewModel.swift in Sources */,
+				4333D567CF077DD9F013943A /* JobRepository.swift in Sources */,
+				9BA824FD8A81064A1B7C92B3 /* JobRowView.swift in Sources */,
+				26D6C411F0DB2FD9687D8092 /* JobSearchFilter.swift in Sources */,
+				FBFB733B7DCC445AE1B2493B /* NetworkClient.swift in Sources */,
+				86EBCA117A563CEC2B441980 /* RemotiveDTO.swift in Sources */,
+				6C4BB8A5FC8E018446C5429B /* SalariaSalesApp.swift in Sources */,
+				341376507E390B5676310085 /* SalaryFormatter.swift in Sources */,
+				8587FA17AB57A9EE00C45C72 /* StateViews.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA687D745D37508375D8EBE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0429852FA9451D8674386584 /* HTMLTextSanitizerTests.swift in Sources */,
+				A5BFD29C933BFF4A3CC477B7 /* JobDetailViewModelTests.swift in Sources */,
+				31353B2BB9D68DA504967DD3 /* JobListViewModelTests.swift in Sources */,
+				4042B834A39A18D2BA364F33 /* JobRepositoryTests.swift in Sources */,
+				4D15D2FC5F8BC8879B282974 /* JobSearchFilterTests.swift in Sources */,
+				A1F4F5F573C12D257B20E0BD /* SalaryFormatterTests.swift in Sources */,
+				51E703B355BDF0CEAC525091 /* TestFixtures.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64297D0B086D2DDD62A46484 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62E3BC2F5CA59CEE47D1034B /* SalariaSales */;
+			targetProxy = 844DD8D8FF9A79C8328FFB40 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		076905A095B366F0052B4D11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.salaria.jobs.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SalariaSales.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SalariaSales";
+			};
+			name = Release;
+		};
+		41A505F414623237A708F0C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4784C431663C2663899EF27A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SalariaSales/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.salaria.jobs;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		87B17C914E0FEC0CB9C8C5DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SalariaSales/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.salaria.jobs;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		AAE3519F4E1942008135DCC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		DE379412D43B427F5A08F6AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.salaria.jobs.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SalariaSales.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SalariaSales";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DC632BBE4ABEF775A492C31 /* Build configuration list for PBXNativeTarget "SalariaSalesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE379412D43B427F5A08F6AD /* Debug */,
+				076905A095B366F0052B4D11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		588D252AFE86920834ABFE2D /* Build configuration list for PBXProject "SalariaSales" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41A505F414623237A708F0C9 /* Debug */,
+				AAE3519F4E1942008135DCC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		673C751CEFAC96B3736C0F32 /* Build configuration list for PBXNativeTarget "SalariaSales" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4784C431663C2663899EF27A /* Debug */,
+				87B17C914E0FEC0CB9C8C5DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E69A5DF3AEF475041E1EBBBF /* Project object */;
+}
